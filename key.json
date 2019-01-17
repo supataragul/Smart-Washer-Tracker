@@ -1,10 +1,10 @@
 {
   "type": "service_account",
   "project_id": "swt-mu",
-  "private_key_id": "04af29a110f29675649bd909a1227f0a215184ff",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDdDo5BPUG3rDF9\nB9KBtG2LPqTnsY+E3Crgc4S9zAq/f58gJYwFhgyNcQt9Y53PN17PAZEHkzhtsoG3\nLOX6wICQsh5DgkZediyMwydbidf9tKXA1kgM0e7dH5qmHiGloHRd44GAEVXLlmy5\n1JnnhlWdiVHrHMuRcWUOXp8RfC0M9wdJ2QxOkRDgwb2/PCJtr1qpIA1ZWcysy7kG\npaCv4L2uEn3NudWfsKShgNJxap6E/kB/vim4yVO08H+J6AgSsQbSz4mDjattmU+R\n0qqnH9OnUTBuuZZmHAY7Yef8S1SgDlEH44io2pyPH+4NWMZ/yBiTwjaFaUvq9OS8\nsZo4TXJ1AgMBAAECgf9ilPCGfPWnHk5I9AlszooLubl7mjPm4Z49epw4CEbCyqdW\n2WfDDto05F+7YNwqYlxln3fjaO7r/Noxq6mO/0pWkm3srVcJyVRqHJ3wtLMeRvGk\njes+dwuPPAjmYYmf0268cDkluUAJtYvHU935jRmhUnFgk0w1ZdyAtrHkRPx89YPt\nzWqbqyhe5sy5JwyVsjjzUsY3wOfvUJfdyHQzlzsPTdcaLXsP+8p38A5DedpwupOT\nfk1f2dT2AT+Cq+KlM/D87rKluDNKn120hh3jshdkInZKf3pCGuupcKUTwZLciyw4\nivyDdvC/Aqrhkfu5RGlVK+lTqrog/wAvI/Z/1JECgYEA8PGW4F/U1O38Is5ggRra\nvnMyUimOh/+D4XDEESf20T7nHwkBg91kyK5Ptw0/n8bQ2+eHwRhgU87s5BbDbp/P\nOY1u3R/tm02KVhD7IaaxxNtccpWNgqnjFN0UEBGiG4IiL6CmTLnBNvnYtTW2bBQK\n2sTi1CR9p9FwDcFr8TRHpm0CgYEA6t7VZDEROH8ooiKrjnqkdWNri6G3jqAUNJwj\nXXyaGVExku0KudzpJs1Ok6b+QpMD3z09yDjrVwYlhV2lxHbLjs4Rxl7zvqEEKDsz\n3sdMF5JFDB+FisCFh2E7lzldZJQhH1C0u/6IHzlz44DFadTw4sT4P//zXkw3753m\nCABgFykCgYEAl0SFnb5sh3YWGuAIlGWAuZrnF9BBTL6tVIcQgVjey0W7oq9rxRbk\n5F0TbPAjZrNSgw0cHK2qJFPAQ/7KmZQ5bH+P/8HA0gTfeeNVVy4pY1b49nNQEZ2J\nFJsrsl7vsGeGAPLSFU91r4cyd6oOKlJ28hwz8E4smYSS3f/2Pcu9xA0CgYEA4/fT\n0cLafybVTsIuGEYr+JC+YzJdUv9HfWUL4oK9o9MuNfkETzD/0Jy4JxKQehfuSzFL\nFVtB+h7KLm+eJVpU69BSamPhW+c3fMEx8Isq7ToY8NJrsSh6stOKnpaccrJgj9+q\n/Unp37zJIknr03RPNxyOBLivBJkgNeDh1GRg4DkCgYAcOuvrHHAWk84vNTi2GQtq\ntFNlUvaH3RkGzDLMUaOC9QgE1ucVcn3a11DeGbSyPBDdHwDBPUMVnlUVdczBuT7+\nHGkj0kHCEjIApOL8VQh4kL3JecQ1J4dP+6vZKr/ZyY5fKOtCQIgyp6DxlbNwasuD\nTTJo4JqLn1z1qPiClYGKwg==\n-----END PRIVATE KEY-----\n",
+  "private_key_id": "KEY_ID",
+  "private_key": "-----BEGIN PRIVATE KEY-----\n\n-----END PRIVATE KEY-----\n",
   "client_email": "swt-mu@appspot.gserviceaccount.com",
-  "client_id": "116076628649000348135",
+  "client_id": "CLIENT_ID",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
   "token_uri": "https://oauth2.googleapis.com/token",
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
