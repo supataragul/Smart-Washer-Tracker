@@ -1,6 +1,8 @@
 # SWT Smart Washer Tracker
 
-This is Smart Washer Tracker that can tracker your washer machine
+This is Smart Washer Tracker that can tracker your washer machine.
+
+http://swt-mu.appspot.com/
 
 # Simple instructions
 
