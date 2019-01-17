@@ -1,0 +1,38 @@
+doctype html
+html(lang="en", ng-app="appApp")
+  head
+    include ./head.jade
+    link(rel="stylesheet" href="home.css")
+    script(src="home.js")
+  body()
+    include ./header.jade
+    div(ng-controller="homeCtrl")
+      // ng-cloak Wait for variables loading
+      div.ng-cloak(ng-cloak)
+        div.container
+          img(src='dashboard-head.jpg', alt='Responsive image', style='width:100%;')
+          br
+          br
+          div.text-center
+            div.container-fluid
+              div.row.px-2
+                div(ng-repeat="tracker in data.trackers").col.mx-2.pt-5.px-5.mb-3.bg-light
+                  img.img-fluid.d-block.mx-auto(ng-if="tracker.running_status", src='working.gif', alt='Card image cap', width='', style='width:200px;')
+                  img.img-fluid.d-block.mx-auto(ng-if="!tracker.running_status", src='finished.jpg', alt='Card image cap', width='', style='width:200px;')
+                  br
+                  div.card.card-body.mb-2
+                    h1.mt-3(ng-if="tracker.running_status") Washing
+                    h1.mt-3(ng-if="!tracker.running_status") Finished
+                    br
+                    p.lead
+                      | Tracker Id: {{tracker.tracker_id}}
+                    p.lead.mb-5(ng-if="tracker.running_status")
+                      | Start time: {{tracker.time | date:'hh:mm a'}} 
+                    p.lead.mb-5(ng-if="!tracker.running_status")
+                      | Finish time: {{tracker.time | date:'hh:mm a'}} 
+                                   
+          br
+          h1(ng-if="data.trackers.length < 1") There are no trackers!
+          br
+
+    include ./footer.jade

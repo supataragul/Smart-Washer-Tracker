@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  head
+    include ../views/head.jade
+    link(rel="stylesheet" href="index.css")
+  body#page-top
+    // Header
+    header.masthead
+      .container.d-flex.h-100.align-items-center
+        .mx-auto.text-center
+          image.mx-auto.my-0(src='logo.png' width="30%")
+          h2.text-white-50.mx-auto.mt-2.mb-5
+          h1.mx-auto.my-0.text-uppercase Smart Washer Tracker
+          h2.text-white-50.mx-auto.mt-2.mb-5
+          a.btn.btn-primary.js-scroll-trigger(href='/login') Sign In
+    // Footer
+    footer.bg-black.small.text-center.text-white-50
+      .container
+        | Copyright © Smart Washer Tracker 2018

@@ -1,0 +1,19 @@
+doctype html
+html(lang="en", ng-app="appApp")
+  head
+    include ./head.jade
+    link(rel="stylesheet" href="report.css")
+    script(src="report.js")
+  body
+    include ./header.jade
+    div(ng-controller="reportCtrl")
+      // ng-cloak Wait for variables loading
+      div.ng-cloak(ng-cloak)
+        div.container
+          img(src='report-head.jpg', alt='Responsive image', style='width:100%;')
+          br
+          br
+          #chartContainer(style='height: 500px; width: 100%;')
+          script(src='https://canvasjs.com/assets/script/jquery.canvasjs.min.js')
+    br
+    include ./footer.jade

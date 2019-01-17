@@ -1,0 +1,15 @@
+.bg-black {
+  background-color: #3b4551 !important;
+}
+
+.bg-primary {
+  background-color: #2473b8 !important;
+}
+
+.text-primary {
+  color: #64a19d !important;
+}
+
+footer {
+  padding: 5rem 0;
+}

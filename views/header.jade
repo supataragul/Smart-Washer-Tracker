@@ -1,0 +1,57 @@
+header
+  div(ng-controller="headerCtrl")
+    // The Modal
+    #myModal.modal
+      .modal-dialog.modal-dialog-centered
+        .modal-content
+          // Modal Header
+          .modal-header
+            h4.modal-title Message
+            button.close(type='button', data-dismiss='modal') ×
+          // Modal body
+          .modal-body
+            | {{msg}}
+          // Modal footer
+          .modal-footer
+            button#modalButton.btn.btn-secondary(type='button', data-dismiss='modal') Close
+    nav.navbar.navbar-expand-md.bg-dark.navbar-dark.fixed-top
+      img.img-rounded(src='logo-head.png', alt='logo')
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#collapsibleNavbar')
+        span.navbar-toggler-icon
+      #collapsibleNavbar.collapse.navbar-collapse
+        ul.navbar-nav
+          li.nav-item
+            a.nav-link(href='/home', target="_self") Dashboard
+          li.nav-item
+            a.nav-link(href='/report', target="_self") Report
+          li.nav-item
+            a.nav-link(href='/devices', target="_self") Device
+        ul.nav.navbar-nav.ml-auto
+          li.nav-item.dropdown
+            a.nav-link.dropdown-toggle.user-action(href='#', data-toggle='dropdown')
+              img.avatar.rounded-circle(src=resData.user.imageUrl, alt='Avatar', style='width:50px;height:50px;')
+              if resData.user.name
+                |  #{resData.user.name}
+              else
+                |  #{resData.user.email}
+              
+              b.caret
+            ul.dropdown-menu
+              li
+                span.dropdown-item 
+                  | #{resData.user.email}
+              li
+                if resData.user.gPlusUrl
+                  a.dropdown-item(href='#{resData.user.gPlusUrl}', target="_blank")
+                    i.fa.fa-user
+                    |  Profile
+                else
+                  a.dropdown-item(href='https://accounts.google.com/signup', target="_blank")
+                    i.fa.fa-user
+                    |  Profile
+
+              li.divider.dropdown-divider
+              li
+                a.dropdown-item(href='/logout')
+                  i.fa.fa-sign-out
+                  |  Sign out

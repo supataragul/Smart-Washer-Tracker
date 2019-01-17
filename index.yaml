@@ -1,0 +1,16 @@
+indexes:
+- kind: user
+  properties:
+  - name: user_id
+  - name: tracker_id
+- kind: tracker
+  properties:
+  - name: running_status
+  - name: tracker_id
+  - name: time
+    direction: desc
+- kind: tracker
+  properties:
+  - name: tracker_id
+  - name: time
+    direction: desc

@@ -1,0 +1,47 @@
+doctype html
+html(lang="en" ng-app="appApp")
+  head
+    include ./head.jade
+    link(rel="stylesheet" href="devices.css")
+    script(src="devices.js")
+  body
+  
+    include ./header.jade
+
+    div(ng-controller="devicesCtrl")
+      // ng-cloak Wait for variables loading
+      div.ng-cloak(ng-cloak)
+        div.container
+          img(src='device-head.jpg', alt='Responsive image', style='width:100%;')
+          br
+          br
+          .table-responsive
+            table.table
+              thead.thead-dark
+                tr
+                  th Tracker Id
+                  th Times
+                  th Date
+                  th Status
+                  th
+              tbody
+                tr(ng-repeat="tracker in data.userTrackers")
+                  td {{tracker.tracker_id}}
+                  td {{tracker.time | date:'hh:mm a'}} 
+                  td {{tracker.time | date:'MM-dd-yyyy'}}
+                  td(ng-if="tracker.running_status") Washing
+                  td(ng-if="tracker.running_status == false") Finished
+                  td(ng-if="tracker.running_status == null") Never
+                  td
+                    a(ng-click="deleteDevice(tracker.tracker_id)", href="#") 
+                      i.fa.fa-trash
+                        |  Delete
+          div
+            div.form-group
+              input.form-control(type='text', ng-model="tracker.trackerId", placeholder='Tracker Id')
+            button.btn.btn-dark(ng-click='addDevice()') 
+              i.fa.fa-plus-square
+                |  Add Device
+          br
+
+    include ./footer.jade
